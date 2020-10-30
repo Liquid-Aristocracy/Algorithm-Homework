@@ -99,5 +99,9 @@ int main()
         calcSeg(k, L, point, seg);
         setLength(n, seg, len);
         fileout << bestCutting(n, len, m) << std::endl;
+        delete point;
+        delete seg;
+        delete len;
+        delete m;
     }
 }
